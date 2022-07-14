@@ -13,3 +13,7 @@
 **시뮬레이션_보람3조.wmv**
   <br/>페이지 시뮬레이션
   <br/>알림톡 발송 
+
+# 웹사이트 연결
+  <br/> http://deruline.dothome.co.kr/project_sns/Main_Page/
+  <br/> http://deruline.dothome.co.kr/project_sns/Detail_Page/
