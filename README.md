@@ -15,5 +15,9 @@
   <br/>알림톡 발송 
 
 # 웹사이트 연결
+
+**메인 페이지**
   <br/> http://deruline.dothome.co.kr/project_sns/Main_Page/
+  
+**디테일 페이지**
   <br/> http://deruline.dothome.co.kr/project_sns/Detail_Page/
