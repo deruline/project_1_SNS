@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참좋은휘트니스</title>
+    <link rel="stylesheet" href="css/s_index.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a16432c856a3fc261146fde0ae7895f8"></script>
+    <style>
+        @font-face {
+            font-family: 'dohyeon';
+            src: url('./font/배민\ 도현체/BMDOHYEON_ttf.ttf');
+        }
+        @font-face {
+            font-family: 'vitro-p';
+            src: url('./font/VITRO_Font_TTF/비트로\ 프라이드\ TTF.ttf');
+        }
+        @font-face {
+            font-family: 'vitro-c';
+            src: url('./font/VITRO_Font_TTF/비트로\ 코어\ TTF.ttf')
+        }
+        @font-face {
+            font-family: 'noto';
+            src: url('./font/Noto_Sans_KR/NotoSansKR-Regular.otf');
+        }
+    </style>
+    
+</head>
+<body>
+    <div class = "s_wrap">
+        <!-- 헤더 영역 -->
+        <div class="s_header">
+            <div class="s_header_logo"><a href="#"><img src="./img/s_header_logo.png" alt="m_logo"></a></div>
+            <div class="s_toggle"><img src="./img/s_header_ham.svg" alt=""></div>
+            <nav>
+                <li><a href="#info"><p>예약 정보</p></a></li>
+                <li><a href="#trainer"><p>트레이너 소개</p></a></li>
+                <li><a href="#oneday"><p>일일 체험 코스 소개</p></a></li>
+                <li><a href="#directions"><p>지도 안내</p></a></li>
+            </nav>
+            <div class="s_header_menu">
+                <div id="s_header_m1"><a href="#info"><img src="./img/s_header_m1.png" alt="m_m1"></a></div>
+                <div id="s_header_m2"><a href="#trainer"><img src="./img/s_header_m2.png" alt="m_m2"></a></div>
+                <div id="s_header_m3"><a href="#oneday"><img src="./img/s_header_m3.png" alt="m_m3"></a></div>
+                <div id="s_header_m4"><a href="#map"><img src="./img/s_header_m4.png" alt="m_m4"></a></div>
+            </div>
+        </div>
+        <!-- 헤더 영역 끝 -->
+        
+        <!-- 인트로 영역 -->
+        <div class = "s_intro">
+            <div class = "s_intro-back_img"> <!-- 인트로 배경화면 -->
+                <img src="img/s_intro-img_pc.png" alt="">
+                <img src="img/s_intro-img_mobile.png" alt="">
+            </div>
+            <div class = "s_intro-bottom-back_img"> <!-- 인트로 바텀 투명 줄 -->
+                <img src="img/s_intro-img_2.png" alt="">
+            </div>
+            <!-- 모바일 상태일때 화살표 아이콘 -->
+            <!-- pc 버전은 예약정보 영역에 .s_booking_btn에 있음 -->
+            <div class = "s_intro_btn-mobile"> 
+                <a href = "#s_booking-back_img">
+                <img src="img/s_intro_btn-img-mobile.svg" alt="">
+            </a>
+            </div>
+        </div>
+        <!-- 인트로 영역끝 -->
+
+        <!-- 예약정보 영역 -->
+
+        <div class = "s_booking_info" id="info">
+            <div id = "s_booking-back_img"> <!-- 예약정보 배경화면 -->
+                <img src="img/s_booking-img_pc.png" alt="">
+                <img src="img/s_booking-img_mobile.png" alt="">
+            </div>
+            <!-- 인트로 화면에서의 버튼  -->
+            <div class = "s_booking_btn"> 
+                <a href = "#s_booking-back_img">
+                 <img src="img/s_intro_btn-img-pc.png" alt="">
+                 
+                </a>
+            </div>
+            <div class = "s_booking_area"> <!-- 예약정보 내역 공간 박스 -->
+                <img src="img/s_intro_btn-area_img-pc.png" alt="">
+                <img src="img/s_intro_btn-area_img-mobile.png" alt="">
+            </div>
+            <div class = "s_booking_info-text">
+                <div id = "s_booking_title">예약 정보</div>
+
+                <div id = "s_booking_info-1">예&emsp;&nbsp;&nbsp;약&emsp;&nbsp;&nbsp;자 : </div>
+                <div id = "s_booking_input-1">헬린이</div>
+
+                <div id = "s_booking_info-2">예약 신청 일자 : </div>
+                <div id = "s_booking_input-2">5월 4일 수요일</div>
+                
+                <div id = "s_booking_info-3">예약 방문 지점 : </div>
+                <div id = "s_booking_input-3">방촌동 참좋은휘트니스</div>
+            </div>
+        </div>
+        <!-- 예약정보 영역 끝 -->
+
+        <!-- 트레이너소개 영역 -->
+        <div class = "s_trainer_info" id="trainer">
+            
+            <div id = "s_trainer-back_img"> <!-- 트레이너 소개 영역 배경화면 -->
+                <img src="img/s_trainer_info-pc.png" alt="">
+                <img src="img/s_trainer_info-mobile.png" alt="">
+            </div>
+            <div id = "s_trainer_info-title">
+                <h1>트레이너 소개</h1>
+            </div>
+            <div id = "s_trainer_info-text_1">
+                <h1>대구 최고 수준의 트레이너들이</h1>
+            </div>
+            <div id = "s_trainer_info-text_2">
+                <h1>당신과 <br/>함께합니다</h1>
+            </div>
+
+            <!-- 모바일 버전 시 트레이너 총 목록  -->
+            <div id = "s_trainer_mobile">
+                <img src="img/s_trainer_mobile.png" alt="">
+            </div>
+
+            <!-- pc 버전 1번 트레이너  -->
+            <div id = "s_trainer_profile_1">
+                <img id="s_trainer_1" src="img/s_trainer_1.png" alt="">
+            </div>
+            <div class="profile_1-text_1"> 
+                <img src="img/s_trainer_1-s.png" alt="">
+            </div>
+
+            <!-- pc 버전 2번 트레이너  -->
+            <div id = "s_trainer_profile_2">
+                <img id="s_trainer_2" src="img/s_trainer_2.png" alt="">
+            </div>
+            <div class="profile_1-text_2">
+                <img src="img/s_trainer_2-s.png" alt="">
+            </div>
+
+            <!-- pc 버전 3번 트레이너  -->
+            <div id = "s_trainer_profile_3">
+                <img id="s_trainer_3" src="img/s_trainer_3.png" alt="">
+            </div>
+            <div class="profile_1-text_3">
+                <img src="img/s_trainer_3-s.png" alt="">
+            </div>
+
+        </div>
+        <!-- 트레이너소개 영역 끝 -->
+
+        <!-- 일일체험 코스 소개 영역 -->
+        <div class = "s_oneday" id="oneday">
+            <div id = "s_oneday-back_img"> <!-- 일일체험 코스 영역 배경화면 -->
+                <img src="img/s_oneday-img_pc.png" alt="">
+                <img src="img/s_oneday-img_mobile.png" alt="">
+            </div>
+            <div id = "s_oneday-title">
+                <h1>일일 체험 코스 소개</h1>
+            </div>
+            <div id = "s_oneday-youtube_1">
+                <iframe src="https://www.youtube.com/embed/8EAUEoCRtBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "s_oneday_title_1">
+                <h1> 어깨 운동</h1>
+            </div>
+            <div id = "s_oneday-youtube_2">
+                <iframe src="https://www.youtube.com/embed/v0xu8HSmtNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "s_oneday_title_2">
+                <h1> 가슴 운동</h1>
+            </div>
+            <div id = "s_oneday-youtube_3">
+                <iframe src="https://www.youtube.com/embed/pPytQ4JYPgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "s_oneday_title_3">
+                <h1> 복근 운동</h1>
+            </div>
+            <div id = "s_oneday-youtube_4">
+                <iframe src="https://www.youtube.com/embed/GJ5yObTw-S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "s_oneday_title_4">
+                <h1> 등 운동</h1>
+            </div>
+            <div id = "s_oneday-youtube_5">
+                <iframe src="https://www.youtube.com/embed/c0P4puHnZhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "s_oneday_title_5">
+                <h1> 하체 운동</h1>
+            </div>
+            <div id = "s_oneday-text">
+                <h1>
+                    원하는 부위의 루틴을 선택하여 
+                    체험해보실 수 있습니다
+                </h1>
+            </div>
+        </div>
+        <!-- 일일체험 코스 소개 영역 끝 -->
+
+        <!-- 지도안내영역 -->
+        <div class = "s_map_info" id="directions">
+            <div id = "s_map_back-img"> <!-- 지도 영역 배경화면 -->
+                <img src="img/s_mpa_info-img_pc.png" alt="">
+                <img src="img/s_mpa_info-img_mobile.png" alt="">
+            </div>
+            <div id = "s_map_info-text">
+                <h1>오시는길</h1>
+            </div>
+            <div id="map"></div> 
+            <!-- <div id = "s_map_img"> -->
+                <!-- <a href="https://map.naver.com/v5/search/%EC%B0%B8%EC%A2%8B%EC%9D%80%ED%9C%98%ED%8A%B8%EB%8B%88%EC%8A%A4/place/1805346423?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14322221.0925760,4284265.5583362,15,0,0,0,dh" target="_blank">
+                    <img src="img/s_map_info.png" alt="">
+                </a> -->
+            <!-- </div> -->
+            <div id = "s_map_location-text"> <!--버스번호표시 이미지 -->
+                <img src="img/s_map_info_nosun-pc.png" alt="">
+                <img src="img/s_map_info_nosun-mobile.png" alt="">
+            </div>
+            <div id = "s_map_footer-img"> <!-- pc버전에서만 표시되는 헬스 남자 이미지 아이콘 -->
+                <img src="img/s_mpa_info-img_2.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="top"><a href="#"><img src="/img/top(m).png" alt="top"></a></div>
+        </div>
+        <!-- 지도안내영역 끝 -->
+        <!-- 푸터 영역 -->
+        <div id="m_p_s_f">
+            <div id="m_f_pc"><img src="./img/m_f_logo.png" alt="m_p_f_image"></div>
+            <div>
+                <p>(주)바디채널 / 대표: 김구섭</p>
+                <p>주소: 대구 동구 동촌로 245 4층</p>
+                <p>사업자등록번호 123-45-67890</p>
+                <p>Copyright ⓒ 2022 참좋은 휘트니스. All Rights Reserved</p>
+            </div>
+        </div>
+        <!-- 푸터 영역끝 -->
+    </div>
+    <script>
+        var s1 = 0;
+        $(window).load(function () {
+            s1 = $(".s_intro-back_img").css("height");
+            $(".s_intro").css("height", s1);
+        })
+        $(window).resize(function () {
+            s1 = $(".s_intro-back_img").css("height");
+            $(".s_intro").css("height", s1);
+        })
+
+        var s2 = 0;
+        $(window).load(function () {
+            s2 = $("#s_map_back-img").css("height");
+            $(".s_map_info").css("height", s2);
+        })
+        $(window).resize(function () {
+            s2 = $("#s_map_back-img").css("height");
+            $(".s_map_info").css("height", s2);
+        })
+        
+        // 지도 API
+        var container = document.getElementById('map'); 
+
+        var options = { 
+
+        center: new kakao.maps.LatLng(35.87998009020631, 128.66979598539297), 
+
+        level: 3 }; 
+
+        var map = new kakao.maps.Map(container, options); 
+
+
+        var markerPosition = new kakao.maps.LatLng(35.87998009020631, 128.66979598539297); 
+
+
+        var marker = new kakao.maps.Marker({ position: markerPosition }); 
+
+
+        marker.setMap(map);
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

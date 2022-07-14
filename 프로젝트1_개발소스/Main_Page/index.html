@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>참좋은휘트니스</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+    <script src="./js/jquery-2.2.4.min.js"></script>
+  </head>
+
+  <body>
+    <div class="m_wrap">
+      <!--헤더-->
+      <div class="m_header">
+        <div class="m_p_h_logo">
+          <a href="#"><img src="./images/m_p_h_logo.png" alt="m_logo" /></a>
+        </div>
+        <div class="m_toggle"><img src="./images/햄버거.png" alt="" /></div>
+        <div class="m_p_h_menu">
+          <div id="m_p_h_m1">
+            <a href="#"><img src="./images/m_p_h_m1.png" alt="m_m1" /></a>
+          </div>
+          <div id="m_p_h_m2">
+            <a href="#info"><img src="./images/m_p_h_m2.png" alt="m_m2" /></a>
+          </div>
+          <div id="m_p_h_m3">
+            <a href="#event"><img src="./images/m_p_h_m3.png" alt="m_m3" /></a>
+          </div>
+          <div id="m_p_h_m4">
+            <a href="#m_p_c4"><img src="./images/m_p_h_m4.png" alt="m_m4" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- 모바일 토글 -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><p>HOME</p></a>
+          </li>
+          <li>
+            <a href="#info_m"><p>INFO</p></a>
+          </li>
+          <li>
+            <a href="#event_m"><p>EVENT</p></a>
+          </li>
+          <li>
+            <a href="#contact_m"><p>CONTACT</p></a>
+          </li>
+        </ul>
+      </nav>
+      <!--HERO-->
+      <div class="m_p_s m_s1" id="hero">
+        <div id="m_p_h1"><img src="./images/m_p_h1.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h2"><img src="./images/m_p_h2.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h3"><img src="./images/m_p_h3.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h4"><img src="./images/m_p_h4.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h5"><img src="./images/m_p_h5.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h6"><img src="./images/m_p_h6.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h7"><img src="./images/m_p_h7.png" alt="m_p_h_img" /></div>
+        <div id="m_p_h8"><img src="./images/m_p_h8.png" alt="m_p_h_img" /></div>
+        <div class="m_p_sns" id="m_p_h_if">
+          <a
+            href="https://www.facebook.com/hashtag/%EC%B0%B8%EC%A2%8B%EC%9D%80%ED%9C%98%ED%8A%B8%EB%8B%88%EC%8A%A4%EC%A7%84%EB%9F%89%EC%A0%90/"
+            target="_blank"
+            ><img src="./images/m_p_h_if.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+        <div class="m_p_sns" id="m_p_h_ii">
+          <a
+            href="https://www.instagram.com/chamjoeun_bangchon/"
+            target="_blank"
+            ><img src="./images/m_p_h_ii.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+        <div class="m_p_sns" id="m_p_h_ib">
+          <a href="https://blog.naver.com/model_jaeeun" target="_blank"
+            ><img src="./images/m_p_h_ib.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+      </div>
+      <div class="m_m_s m_m_s1">
+        <div id="m_m_h_b">
+          <img src="./images/m_m_h.png" alt="m_m_h_image" />
+        </div>
+        <div id="m_m_h_ii">
+          <a
+            href="https://www.instagram.com/chamjoeun_bangchon/"
+            target="_blank"
+            ><img src="./images/m_p_h_ii.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+        <div id="m_m_h_if">
+          <a
+            href="https://www.facebook.com/hashtag/%EC%B0%B8%EC%A2%8B%EC%9D%80%ED%9C%98%ED%8A%B8%EB%8B%88%EC%8A%A4%EC%A7%84%EB%9F%89%EC%A0%90/"
+            target="_blank"
+            ><img src="./images/m_p_h_if.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+        <div id="m_m_h_ib">
+          <a href="https://blog.naver.com/model_jaeeun" target="_blank"
+            ><img src="./images/m_p_h_ib.png" alt="m_p_h_iimg"
+          /></a>
+        </div>
+      </div>
+      <div class="m_m_s m_m_b">
+        <a href="#apply"><img src="./images/m_m_b.png" alt="m_m_b_image" /></a>
+      </div>
+      <!--INFO-->
+      <div class="m_p_s m_s2" id="info">
+        <div id="m_p_i1"><img src="./images/m_p_i1.png" alt="m_p_i_img" /></div>
+        <div
+          id="m_p_i3"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="1500"
+        >
+          <img src="./images/m_p_i3.png" alt="m_p_i_img" />
+        </div>
+        <div
+          id="m_p_i4"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-offset="1500"
+        >
+          <img src="./images/m_p_i4.png" alt="m_p_i_img" />
+        </div>
+        <div
+          id="m_p_i5"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-offset="1500"
+        >
+          <img src="./images/m_p_i5.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_p_i6"><img src="./images/m_p_i6.png" alt="m_p_i_img" /></div>
+        <div id="m_p_i7"><img src="./images/m_p_i7.png" alt="m_p_i_img" /></div>
+        <div id="m_p_i8"><img src="./images/m_p_i8.png" alt="m_p_i_img" /></div>
+        <div id="m_p_i9"><img src="./images/m_p_i9.png" alt="m_p_i_img" /></div>
+        <div id="m_p_i10">
+          <img src="./images/m_p_i10.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_p_i11">
+          <img src="./images/m_p_i11.png" alt="m_p_i_img" />
+        </div>
+
+        <div id="m_p_i12">
+          <a
+            href="./images/big/slide_bg_1.png"
+            data-lightbox="GYM"
+            data-title="내부사진1"
+          >
+            <img src="./images/slide_bg_1.png" />
+          </a>
+        </div>
+        <div id="m_p_i13">
+          <a
+            href="./images/big/slide_bg_2.png"
+            data-lightbox="GYM"
+            data-title="내부사진2"
+          >
+            <img src="./images/slide_bg_2.png" />
+          </a>
+        </div>
+        <div id="m_p_i14">
+          <a
+            href="./images/big/slide_bg_3.png"
+            data-lightbox="GYM"
+            data-title="내부사진3"
+          >
+            <img src="./images/slide_bg_3.png" />
+          </a>
+        </div>
+        <div id="m_p_i15">
+          <a
+            href="./images/big/slide_bg_4.png"
+            data-lightbox="GYM"
+            data-title="내부사진4"
+          >
+            <img src="./images/slide_bg_4.png" />
+          </a>
+        </div>
+      </div>
+      <div class="m_m_s m_m_s2" id="info_m">
+        <div id="m_m_i_b">
+          <img src="./images/m_m_i_b.png" alt="m_m_i_bg_image" />
+        </div>
+        <div id="m_m_i_i1">
+          <img src="./images/slide_bg_1.png" />
+        </div>
+        <div id="m_m_i_i2">
+          <img src="./images/slide_bg_2.png" />
+        </div>
+        <div id="m_m_i_i3">
+          <img src="./images/slide_bg_3.png" />
+        </div>
+        <div id="m_m_i_i4">
+          <img src="./images/slide_bg_4.png" />
+        </div>
+      </div>
+      <!--Before & After-->
+      <div class="m_p_s m_s3">
+        <div id="m_p_i_bg">
+          <img src="./images/m_s3_bg.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_p_i16">
+          <img src="./images/m_p_i16.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_p_i17">
+          <img src="./images/m_p_i17.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_p_i18" class="mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18.png" alt="m_p_i_img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18_2.png" alt="m_p_i_img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18_3.png" alt="m_p_i_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m_m_s m_m_s3" id="bf">
+        <div id="m_m_i_bg">
+          <img src="./images/m_s3_bg2.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_m_i5">
+          <img src="./images/m_p_i16.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_m_i6">
+          <img src="./images/m_p_i17.png" alt="m_p_i_img" />
+        </div>
+        <div id="m_m_i7" class="moSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18.png" alt="m_p_i_img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18_2.png" alt="m_p_i_img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/m_p_i18_3.png" alt="m_p_i_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--EVENT-->
+      <div class="m_p_s m_s4" id="event">
+        <div id="m_p_e1">
+          <img src="./images/m_p_e1.png" alt="m_p_e_image" />
+        </div>
+        <div id="m_p_e2">
+          <img src="./images/m_p_e2.png" alt="m_p_e_image" />
+        </div>
+        <div id="m_p_e3">
+          <img src="./images/m_p_e3.png" alt="m_p_e_image" />
+        </div>
+        <div id="m_p_e4">
+          <img src="./images/m_p_e4.png" alt="m_p_e_image" />
+        </div>
+        <div id="m_p_e5">
+          <img src="./images/m_p_e5.png" alt="m_p_e_image" />
+        </div>
+      </div>
+      <div class="m_m_s m_m_s4" id="event_m">
+        <img src="./images/m_m_em.png" alt="m_m_em_image" />
+      </div>
+      <!--CONTACT-->
+      <div class="m_p_s m_s5" id="contact">
+        <div id="m_p_c1">
+          <img src="./images/m_p_c1.png" alt="m_p_c_image" />
+        </div>
+        <div id="m_p_c2">
+          <img src="./images/m_p_c2.png" alt="m_p_c_image" />
+        </div>
+        <div id="m_p_c3">
+          <img src="./images/m_p_c3.png" alt="m_p_c_image" />
+        </div>
+        <div id="m_p_c4">
+          <img src="./images/m_p_c4.png" alt="m_p_c_image" />
+        </div>
+        <div id="m_p_c4_check">
+          <button onclick="btn_sendMessage()">
+            <img src="./images/m_p_c4_check.png" alt="m_p_c_image" />
+          </button>
+        </div>
+        <div id="m_p_c5">
+          <div class="m_p_c_t">
+            <div id="m_p_c_t1">
+              <p>성명</p>
+              <input type="text" id="m_p_c_t_n" />
+            </div>
+            <div id="m_p_c_t2">
+              <p>휴대폰</p>
+              <input type="text" id="m_p_c_t_t" />
+            </div>
+            <div id="m_p_c_t3">
+              <p>체험희망일</p>
+              <input type="text" id="m_p_c_t_d" placeholder="ex) 6/1 14:00" />
+            </div>
+            <div id="m_p_c_t4">
+              <p>메모</p>
+              <input type="text" id="m_p_c_t_m" />
+            </div>
+          </div>
+        </div>
+        <div id="m_p_c6">
+          <input type="checkbox" name="agree" id="box_p" />
+          <label for="agree"><span>개인정보처리방침</span>에 동의합니다.</label>
+        </div>
+      </div>
+      <div class="m_m_s m_m_s5" id="contact_m">
+        <div id="m_m_c1">
+          <img src="./images/m_m_c_bg.png" alt="m_m_c_image" />
+        </div>
+        <div id="m_m_c2">
+          <img src="./images/m_m_c_i1.png" alt="m_m_c_image" />
+        </div>
+        <div id="m_m_c3">
+          <img src="./images/m_m_c_i2.png" alt="m_m_c_image" />
+        </div>
+        <div id="m_m_c3_check">
+          <button onclick="btn_sendMessage_m()">
+            <img src="./images/m_m_c_i2_check.png" alt="m_m_c_image" />
+          </button>
+        </div>
+        <div id="m_m_c4">
+          <div class="m_m_c_t" id="apply">
+            <div id="m_m_c_t1">
+              <p>성명</p>
+              <input type="text" id="m_m_c_t_n" />
+            </div>
+            <div id="m_m_c_t2">
+              <p>휴대폰</p>
+              <input type="text" id="m_m_c_t_t" />
+            </div>
+            <div id="m_m_c_t3">
+              <p>체험희망일</p>
+              <input type="text" id="m_m_c_t_d" placeholder="ex) 6/1 14:00" />
+            </div>
+            <div id="m_m_c_t4">
+              <p>메모</p>
+              <input type="text" id="m_m_c_t_m" />
+            </div>
+          </div>
+        </div>
+        <div id="m_m_c6">
+          <input type="checkbox" name="agree" id="box_m" />
+          <label for="agree"><span>개인정보처리방침</span>에 동의합니다.</label>
+        </div>
+      </div>
+      <div>
+        <div class="top">
+          <a href="#"><img src="./images/탑버튼 (2).png" alt="top" /></a>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <div id="m_p_s_f">
+        <div id="m_f_pc">
+          <img src="./images/m_f_logo.png" alt="m_p_f_image" />
+        </div>
+        <div>
+          <p>(주)바디채널 / 대표: 김구섭</p>
+          <p>주소: 대구 동구 동촌로 245 4층</p>
+          <p>사업자등록번호 123-45-67890</p>
+          <p>Copyright ⓒ 2022 참좋은 휘트니스. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <!-- 애니메이션 -->
+    <script>
+      AOS.init();
+    </script>
+    <!--히어로 섹션 높이 설정-->
+    <script>
+      var h8 = 0;
+      $(window).load(function () {
+        h8 = $("#m_p_h8").css("height");
+        $(".m_s1").css("height", h8);
+      });
+      $(window).resize(function () {
+        h8 = $("#m_p_h8").css("height");
+        $(".m_s1").css("height", h8);
+      });
+    </script>
+    <!--인포 섹션 높이 설정-->
+    <script>
+      var i1 = 0;
+      $(window).load(function () {
+        i1 = $("#m_p_i1").css("height");
+        $(".m_s2").css("height", i1);
+      });
+      $(window).resize(function () {
+        i1 = $("#m_p_i1").css("height");
+        $(".m_s2").css("height", i1);
+      });
+    </script>
+    <!--비포&애프터 섹션 높이 설정-->
+    <script>
+      var ibg = 0;
+      $(window).load(function () {
+        ibg = $("#m_p_i_bg").css("height");
+        $(".m_s3").css("height", ibg);
+      });
+      $(window).resize(function () {
+        ibg = $("#m_p_i_bg").css("height");
+        $(".m_s3").css("height", ibg);
+      });
+    </script>
+    <!--이벤트 섹션 높이 설정-->
+    <script>
+      var e1 = 0;
+      $(window).load(function () {
+        e1 = $("#m_p_e1").css("height");
+        $(".m_s4").css("height", e1);
+      });
+      $(window).resize(function () {
+        e1 = $("#m_p_e1").css("height");
+        $(".m_s4").css("height", e1);
+      });
+    </script>
+    <!--콘텍트 섹션 높이 설정-->
+    <script>
+      var c1 = 0;
+      $(window).load(function () {
+        c1 = $("#m_p_c1").css("height");
+        $(".m_s5").css("height", c1);
+      });
+      $(window).resize(function () {
+        c1 = $("#m_p_c1").css("height");
+        $(".m_s5").css("height", c1);
+      });
+
+      var resizeTimer;
+      $(window).bind("resize", function () {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(resizeFunction, 500);
+      });
+      // function resizeFunction(){
+      //     $(".lb-image").load(window.location.href +".lb-image");
+      // }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+    <script src="js/solapi.js"></script>
+    <script>
+      function getPfInfo() {
+        let pfid = document.getElementById("pfid").value;
+        getPlusfriend(pfid);
+      }
+
+      function getPfInfos() {
+        getPlusfriends();
+      }
+
+      function getTemplateInfo() {
+        let templateId = document.getElementById("template-id").value;
+        getTemplate(templateId);
+      }
+
+      function getTemplateInfos() {
+        getTemplates();
+      }
+
+      function btn_sendMessage() {
+        let name = document.getElementById("m_p_c_t_n").value;
+        let tel = document.getElementById("m_p_c_t_t").value;
+        let date = document.getElementById("m_p_c_t_d").value;
+        let btn_url = "www.google.com";
+        let templateId = "KA01TP220427045134957ePHd6pWVZIN";
+        let pfid = "KA01PF22041206411o33TFWW9Sl71Ppp";
+        let where = "방촌점";
+        let location = "대구";
+        let phonenum = "053-999-9999";
+        let 안내문구 = "ㄹㅇㄴ";
+
+        console.log(name);
+        console.log(tel);
+        console.log(date);
+        console.log(btn_url);
+        console.log(templateId);
+
+        sendMessage(
+          name,
+          tel,
+          date,
+          btn_url,
+          pfid,
+          templateId,
+          where,
+          phonenum,
+          안내문구,
+          location
+        );
+      }
+
+      function btn_sendMessage_m() {
+        let name = document.getElementById("m_m_c_t_n").value;
+        let tel = document.getElementById("m_m_c_t_t").value;
+        let date = document.getElementById("m_m_c_t_d").value;
+        let btn_url = "www.google.com";
+        let templateId = "KA01TP220427045134957ePHd6pWVZIN";
+        let pfid = "KA01PF22041206411o33TFWW9Sl71Ppp";
+        let where = "방촌점";
+        let location = "대구";
+        let phonenum = "053-999-9999";
+        let 안내문구 = "ㄹㅇㄴ";
+
+        console.log(name);
+        console.log(tel);
+        console.log(date);
+        console.log(btn_url);
+        console.log(templateId);
+
+        sendMessage(
+          name,
+          tel,
+          date,
+          btn_url,
+          pfid,
+          templateId,
+          where,
+          phonenum,
+          안내문구,
+          location
+        );
+      }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- swiper.js-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      var swipe = new Swiper(".moSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
